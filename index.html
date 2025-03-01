@@ -17,7 +17,7 @@
 
             <div class="flex items-center gap-4">
                 <img src="assets/checkbox.png" alt="">
-                <p class="text-2xl text-black">23</p>
+                <p id="nav-num" class="text-2xl text-black font-bold">23</p>
                 <img id="theme-btn" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
@@ -36,18 +36,26 @@
                         </div>
                         <div>
                             <p class="text-gray-500 text-sm">Task Assigned </p>
-                            <h1 class="font-bold">06</h1>
+                            <h1 id="task-manager" class="font-bold">06</h1>
                         </div>
                     </div>
-                    <div class="col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] p-3 rounded-lg flex items-center">
+                    <div id="blog" class="col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] p-3 rounded-lg flex items-center cursor-pointer">
                         <img src="assets/board.png" alt="">
                         <p class="text-white font-bold text-xl">Discover Something New Today!</p>
                     </div>
                     <div class=" bg-[#E0E9FF] p-5 rounded-lg flex gap-4 items-center">
                         <img src="assets/calender.png" alt="">
-                        <p>Wed ,<br>
-                            <span class="font-bold">Jul 28 2025</span> </p>
+                        <div>
+                            <p class="text-sm">
+                              <span id="weekday"></span>
+                            </p>
+                            <p class="text-lg font-bold">
+                              <span id="month"></span> <span id="day"></span> <span id="year"></span>
+                            </p>
+                        </div>
                     </div>
+
+                    
                 </div>
 
                 <div class="grid grid-cols-3 gap-5 mt-5">
@@ -62,7 +70,7 @@
                                 <p class="text-gray-500">Deadline</p>
                             <p class="font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg">Completed</button>
+                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg cursor-pointer completed-btn">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#E0E9FF] p-5 rounded-lg">
@@ -75,7 +83,7 @@
                                 <p class="text-gray-500">Deadline</p>
                             <p class="font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg">Completed</button>
+                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg cursor-pointer completed-btn">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#E0E9FF] p-5 rounded-lg">
@@ -89,7 +97,7 @@
                                 <p class="text-gray-500">Deadline</p>
                             <p class="font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg">Completed</button>
+                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg cursor-pointer completed-btn">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#E0E9FF] p-5 rounded-lg">
@@ -103,7 +111,7 @@
                                 <p class="text-gray-500">Deadline</p>
                             <p class="font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg">Completed</button>
+                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg cursor-pointer completed-btn">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#E0E9FF] p-5 rounded-lg">
@@ -117,7 +125,7 @@
                                 <p class="text-gray-500">Deadline</p>
                             <p class="font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg">Completed</button>
+                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg cursor-pointer completed-btn">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#E0E9FF] p-5 rounded-lg">
@@ -131,7 +139,7 @@
                                 <p class="text-gray-500">Deadline</p>
                             <p class="font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg">Completed</button>
+                            <button class="bg-[#3752FD] text-white px-3 py-2 rounded-lg cursor-pointer completed-btn">Completed</button>
                         </div>
                     </div>
 
@@ -145,9 +153,12 @@
                     <h1>Activity Log</h1>
                 </div>
                 <div class="flex justify-center">
-                    <button class="bg-[#3752FD] p-2 mt-3 rounded-lg text-white font-normal">Clear History</button>
+                    <button id="clear-history-btn" class="bg-[#3752FD] p-2 mt-3 rounded-lg text-white font-normal cursor-pointer">Clear History</button>
                 </div>
-                
+
+                <div id="history">
+
+                </div>
             </div>
         </div>
         
@@ -155,5 +166,7 @@
 
 
     <script src="script/script.js"></script>
+    <script src="script/date.js"></script>
+    <script src="script/completedBtn.js"></script>
 </body>
 </html>

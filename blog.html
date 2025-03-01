@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Blog</title>
+</head>
+<body class="bg-slate-200">
+    <header class="max-w-full mx-20">
+        <nav class="flex justify-between bg-white p-3 rounded-xl">
+            <div class="flex items-center gap-4">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl text-black">Dev <span class="text-[#00303C] font-bold">Board</span></h1>
+            </div>
+
+            <div id="back-btn" class="flex items-center gap-4">
+                <button  class="btn bg-[#3752FD] rounded-lg text-white">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <section class="">
+        <div class="bg-[#fff] max-w-full mx-20 p-4 rounded-lg">
+            <h1 class="font-bold">Question 1: What are the different ways to select an element in the DOM?</h1>
+            <h2 class="text-gray-500">We can select elements using getElementById for unique IDs, getElementsByClassName or querySelectorAll for classes, and getElementsByTagName or querySelectorAll for tag names.</h2>
+        </div>
+        <br>
+        <div class="bg-[#fff] max-w-full mx-20 p-4 rounded-lg">
+            <h1 class="font-bold">Question 2: What is the difference between innerHTML, innerText, and textContent?</h1>
+            <h2 class="text-gray-500">innerHTML parses HTML, innerText gets visible text, and textContent gets all text content, including hidden.</h2>
+        </div>
+        <br>
+        <div class="bg-[#fff] max-w-full mx-20 p-4 rounded-lg">
+            <h1 class="font-bold">Question 3: What is event delegation in the DOM?</h1>
+            <h2 class="text-gray-500">Event delegation uses a single parent element listener to handle events for all child elements, improving efficiency.</h2>
+        </div>
+        <br>
+        <div class="bg-[#fff] max-w-full mx-20 p-4 rounded-lg">
+            <h1 class="font-bold">Question 4: What is event bubbling in the DOM?</h1>
+            <h2 class="text-gray-500">Event bubbling is when an event on a child element travels up the DOM tree to its parents.</h2>
+        </div>
+        <br>
+        <div class="bg-[#fff] max-w-full mx-20 p-4 rounded-lg">
+            <h1 class="font-bold">Question 5: How do you create, add, and remove elements using JavaScript?</h1>
+            <h2 class="text-gray-500">Create elements with createElement, add them with appendChild or insertBefore, and remove them with removeChild or remove.</h2>
+        </div>
+    </section>
+
+    <script src="script/completedBtn.js"></script>
+</body>
+</html>
